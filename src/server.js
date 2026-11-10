@@ -1,15 +1,25 @@
 import express from "express";
 import { prisma } from "./db.js";
+<<<<<<< HEAD
 import cors from "cors"
 const app = express();
 
 app.use(express.json());
 app.use(cors())
+=======
+
+const app = express();
+
+app.use(express.json());
+>>>>>>> 87a77166ab3b9f9593faf25fb01b93664aeb3637
 
 app.get("/etudiants", async (req, res) => {
   const etudiants = await prisma.etudiant.findMany();
   res.json(etudiants);
+<<<<<<< HEAD
   await prisma.$disconnect();
+=======
+>>>>>>> 87a77166ab3b9f9593faf25fb01b93664aeb3637
 });
 
 app.post("/etudiants", async (req, res) => {
@@ -29,6 +39,7 @@ await prisma.$disconnect();
 res.status(200).json();
 })
 
+<<<<<<< HEAD
 app.put("/etudiants/:id",async (req, res) => {
     const id=Number(req.params.id)
   console.log(id)
@@ -44,4 +55,6 @@ app.put("/etudiants/:id",async (req, res) => {
 });
 
 console.log("Server bien démarré")
+=======
+>>>>>>> 87a77166ab3b9f9593faf25fb01b93664aeb3637
 app.listen(3000);

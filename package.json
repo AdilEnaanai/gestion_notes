@@ -13,7 +13,12 @@
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.10.1",
     "@prisma/client": "^7.10.1",
+<<<<<<< HEAD
     "dotenv": "^18.0.10"
+=======
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0"
+>>>>>>> 87a77166ab3b9f9593faf25fb01b93664aeb3637
   },
   "devDependencies": {
     "prisma": "^7.10.1"

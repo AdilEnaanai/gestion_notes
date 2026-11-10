@@ -20,4 +20,3 @@ model Etudiant {
 
   @@map("etudiant")
 } 
-
